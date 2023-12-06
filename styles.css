@@ -258,7 +258,7 @@ td:hover .zoom-container {
     margin-left: 100px;
 }
 .plush, .mouse, .calendar, .advent, .YM{
-    margin-top: 30px;
+    margin-top: 20px;
     height:130px;
     width :130px;
 }
@@ -286,6 +286,10 @@ td:hover .zoom-container {
 .Pr5{
     margin-top: 30px;
     width: 500px;
+}
+.YM{
+    height: 130px;
+    width: 130px;
 }
 .Pr6{
     margin-top: 30px;
