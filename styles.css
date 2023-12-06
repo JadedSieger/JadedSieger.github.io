@@ -447,6 +447,57 @@ footer{
     flex-direction: column;
     width: 500px;
 }
+.socialtable{
+    text-align: center;
+}
+.socialtable img {
+    margin: 0 10px; /* Add some margin around each social media icon for spacing */
+}
+
+.yt{
+    height: 30px;
+    width: 40px;
+}
+.ig{
+    height: 30px;
+    width: 40px;
+}
+.tw{
+    height: 30px;
+    width: 30px;
+}
+.album {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    flex: 0 0 auto; 
+}
+
+.album img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio of the images */
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+    max-width: 100%; /* Set maximum width to 100% */
+    max-height: 100%; /* Set maximum height to 100% */
+    object-fit: contain; 
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 .footdiv{
     width:1000px;
     text-align: justify;
