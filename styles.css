@@ -473,6 +473,10 @@ footer{
     width: 100%;
     flex: 0 0 auto; 
 }
+.image-container {
+    width: 100%;
+    flex: 0 0 auto; 
+}
 
 .album img {
     width: 100%;
