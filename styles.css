@@ -469,7 +469,7 @@ footer{
     width: 100%;
 }
 
-.gallery-container {
+.gallery-container img{
     width: 100%;
     flex: 0 0 auto; 
 }
