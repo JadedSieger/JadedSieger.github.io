@@ -573,14 +573,72 @@
     @media only screen and (max-width: 600px) {
         body {
             font-size: 14px; /* Example: Decrease the base font size for better readability */
+            max-width: 600px;
         }
-
+        .vidBG {
+            margin-top: 100px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        #myVideo {
+            z-index: 2;
+            width: 100%;
+            opacity: 0.6;
+            margin-top: 10px;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 41%;
+            background-color: black; /* Adjust the color and opacity as needed */
+            z-index: 1;
+        }
+        .textover{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:white;
+            z-index: 3;
+            width: 300px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+        .logofullmain {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+        .LogoName{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 90px;
+            font-size: 20px;
+            text-align: left;
+            width: 1000px;
+        }
+        .LogoName2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: left;
+            margin-left: 3px;
+            width: 1000px;
+            font-size: 15px;
+        }
         .leftBar {
             display: none; /* Example: Hide the left bar on small screens */
         }
-
+        .tabTitle1{
+            width: 300px;
+        }
         .topHeader {
-            height: auto; /* Example: Allow the header to adjust its height based on content */
+            height: auto;
+            width: 375px; /* Example: Allow the header to adjust its height based on content */
+        }
+        .Section2, .companyLogo{
+            margin-left: 10px;
         }
         .search, .textbox{
             display: none;
@@ -589,7 +647,7 @@
             display: none;
         }
         nav {
-            flex-direction: column;
+            flex-direction: row;
             font-size: small; /* Example: Stack navigation items vertically */
         }
 
@@ -673,6 +731,6 @@
             font-size: x-small;
         }
         .footdiv{
-            height: auto;
+            height: 100px;
         }
     }
