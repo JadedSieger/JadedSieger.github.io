@@ -31,7 +31,7 @@
     .overlay {
         position: absolute;
         width: 100%;
-        height: 95%;
+        height: 100%;
         background-color: black; /* Adjust the color and opacity as needed */
         z-index: 2;
     }
@@ -212,13 +212,13 @@
     /*talents section*/
     .main{
         text-align: center;
-        margin: 50px /* Adjust the margin as needed */
+        margin: 50px; /* Adjust the margin as needed */
     }
     .mainBG{
         background-color: darkblue;
     }
     .talentsSec{
-        background-color: lightblue;
+        background-color: #252526;
     }
     .pictureTable1{
         text-align: center;
@@ -229,7 +229,7 @@
     }
     .MoriCalliope{
         width: 140px;
-        height: 202px;
+        height: 210px;
         text-align: center;
     }
     .HoshimachiSuisei,.PipkinPippa{
@@ -255,7 +255,7 @@
         transform: scale(1.2);
         z-index: 3; /* Set a higher z-index value on hover */
     }
-    .UP{
+    .UP, .TX,.LX,.K,.KL,.S{
         width: 400px;
     }
     .PP{
@@ -303,7 +303,7 @@
     .merchArea{
         font-size: large;
         font-style: italic;
-        background-color: darkcyan;
+        background-color:  #252526;
     }
     .merch{
         margin-left: 100px;
@@ -568,7 +568,10 @@
         width: 150px
     }
 
-
+    .Sun, .Tex, .Kiel,.Lux,.Kai{
+        height: 200px;
+        width: auto;
+    }
     /*Responsive CSS*/
     @media only screen and (max-width: 600px) {
         body {
