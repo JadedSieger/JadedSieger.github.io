@@ -1,0 +1,218 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    position: relative; /* Make sure the navbar is above the video */
+    z-index: 10; /* Ensure it's above the video and overlay */
+  }
+  
+  .VTuberHavenlogo {
+    height: 50px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    height: 80px;
+  }
+
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4; /* Color change on hover */
+}
+
+nav .dropdown-content {
+    display: none;
+    width: 130px;
+    height: auto;
+    position: absolute;
+    font-size: small;
+    flex: auto;
+    flex-direction: column;
+    top: 100%;
+    /* Position dropdown below the parent list item */
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 2px;
+  }
+  nav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Profile Section */
+  .profile1 {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #fafafa;
+  }
+  
+  .profinfo {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  
+  .profLogo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .profname {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .desc2 {
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  /* Side Info Section */
+  .sideinfo {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Social Links */
+  .socialtable {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+  }
+  
+  .socialtable img, .yt, .tw, .ig {
+    width: 40px;
+    transition: transform 0.3s;
+  }
+  
+  .socialtable img:hover {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the content */
+  }.contactInfo {
+    display: flex;
+    justify-content: center; /* Center the contact info horizontally */
+    margin-bottom: 20px; /* Space between contact info and bottom text */
+  }.footdiv {
+    width: 80%; /* Adjust width as needed */
+    max-width: 960px; /* Set a maximum width */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Collapse table borders */
+  }.footdiv td {
+    padding: 20px; /* Add padding to table cells */
+    vertical-align: top; /* Align content to the top of the cell */
+  }.extras,.extras2 {
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0; /* Remove default padding from lists */
+    text-align: left; /* Align text to the left within each list */
+  }.extras h3,.extras2 h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }.extras li,.extras2 li {
+    margin-bottom: 5px; /* Add spacing between list items */
+  }.bottom {
+    border-top: 1px solid #555; /* Add a line above the copyright text */
+    padding-top: 10px; /* Add padding above the copyright text */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
+  
+  /* Media query for smaller screens (adjust as needed) */
+@media (max-width: 768px) {
+    .footdiv {
+        width: 95%; /* Make table wider on smaller screens */
+      }
+    
+    .footdiv td {
+        display: block; /* Stack table cells vertically */
+        width: 100%;
+        padding: 10px; /* Reduce padding on smaller screens */
+      }
+    
+    .extras,.extras2 {
+        text-align: center; /* Center text in lists on smaller screens */
+      }
+    }
+    /* Responsiveness for smaller screens */
+    @media (max-width: 768px) {
+      .pictureTable1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .pictureTable1 {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+      }
+    }
+    
