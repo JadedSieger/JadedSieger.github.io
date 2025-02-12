@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -16,39 +18,44 @@ header {
   z-index: 10; /* Ensure it's above the video and overlay */
 }
 
-.navbar {
+.navibar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Ensures logo is on the left and links are on the right */
   align-items: center;
-  padding: 20px 30px;
+  padding: 10px 30px;
   height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.logo {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
+.navidiv {
+    width: 100%;
+    max-width: 1200px;
+    /* Restrict width for better layout */
 }
-
+.navLogo{
+  height: 70px;
+  width: auto;
+}
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  align-items: center; /* Aligns items vertically */
+  gap: 30px; /* Adds spacing between links */
 }
-
-.nav-links li {
-  margin-left: 30px;
+.nav-links li{
+  display: flex;
+    align-items: center;
 }
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  transition: color 0.3s;
+.nav-links li:first-child {
+  margin-right: auto; /* Pushes logo to the left */
 }
-
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  
 .nav-links a:hover {
   color: #00bcd4; /* Color change on hover */
 }
@@ -388,26 +395,6 @@ footer {
   border-top: 1px solid #555; /* Add a line above the copyright text */
   padding-top: 10px; /* Add padding above the copyright text */
   font-size: 0.9em; /* Slightly smaller font size */
-}
-
-nav .dropdown-content {
-  display: none;
-  width: 130px;
-  height: auto;
-  position: absolute;
-  font-size: small;
-  flex: auto;
-  flex-direction: column;
-  top: 100%;
-  /* Position dropdown below the parent list item */
-  left: 0;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 2px;
-}
-nav .dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /* Media query for smaller screens (adjust as needed) */
