@@ -33,8 +33,8 @@ function getBotName() {
 }
 
 // Automatically get bot status and name on page load
-window.onload = function() {
+/*window.onload = function() {
     getStatus();
     setInterval(getStatus, 10000);
     getBotName();
-};
+};*/
