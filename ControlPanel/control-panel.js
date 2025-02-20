@@ -11,6 +11,8 @@ function getStatus() {
     fetch(`${API_URL}/bot/status`, { method: "GET" }) // Changed to GET request
         .then(response => response.json())
         .then(data => {
+            console.log("API Response: " +  data);
+            
             document.getElementById("status").textContent = "Status: " + data.status;
         })
         .catch(error => console.error("Error: ", error));
