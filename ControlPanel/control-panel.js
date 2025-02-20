@@ -8,7 +8,7 @@ function SendCommand(command) {
 }
 
 function getStatus() {
-    fetch(`${API_URL}/bot/status`, { method: "GET" }) // Changed to GET request
+    fetch(`${API_URL}/bot/status?timestamp=${new Date().getTime()}`, { method: "GET" }) // Changed to GET request
         .then(response => response.text())
         .then(text =>{
             console.log("Raw API res: ", text);
@@ -35,5 +35,6 @@ function getBotName() {
 // Automatically get bot status and name on page load
 window.onload = function() {
     getStatus();
+    setInterval(getStatus, 10000);
     getBotName();
 };
