@@ -9,10 +9,14 @@ function SendCommand(command) {
 
 function getStatus() {
     fetch(`${API_URL}/bot/status`, { method: "GET" }) // Changed to GET request
-        .then(response => response.json())
+        .then(response => response.text())
+        .then(text =>{
+            console.log("Raw API res: ", text);
+            return JSON.parse(text);
+        })    
         .then(data => {
-            console.log("API Response: " +  data);
-            
+            console.log("Parsed JSON:", data)
+                
             document.getElementById("status").textContent = "Status: " + data.status;
         })
         .catch(error => console.error("Error: ", error));
