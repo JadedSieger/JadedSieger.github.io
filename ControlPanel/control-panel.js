@@ -1,7 +1,7 @@
 const API_URL = "https://lieserl-einstein-js-production.up.railway.app"; // Ensure HTTPS
 
 function SendCommand(command) {
-    fetch(`${API_URL}/bot/${command}`, { method: "POST" })
+    fetch(`${API_URL}/bot/${command}`, { method: "POST", cache: "no-store" })
         .then(response => response.json())
         .then(data => alert(data.message))    
         .catch(error => console.error("Error: ", error));
