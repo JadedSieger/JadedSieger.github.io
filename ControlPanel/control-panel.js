@@ -21,7 +21,7 @@ function getBotName() {
     fetch(`${API_URL}/bot/name`, { method: "GET" }) // Assuming API endpoint is /bot/name
         .then(response => response.json())
         .then(data => {
-            document.getElementById("bot-name").textContent = "Bot Name: " + data.name;
+            document.getElementById("botName").textContent = "Bot Name: " + data.name;
         })
         .catch(error => console.error("Error fetching bot name:", error));
 }
