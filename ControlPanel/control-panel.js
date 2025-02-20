@@ -1,14 +1,14 @@
 const API_URL = "https://lieserl-einstein-js-production.up.railway.app"; // Ensure HTTPS
 
 function SendCommand(command) {
-    fetch(`${API_URL}/bot/${command}`, { method: "POST", cache: "no-store" })
+    fetch(`${API_URL}/bot/${command}`, { method: "POST"})
         .then(response => response.json())
         .then(data => alert(data.message))    
         .catch(error => console.error("Error: ", error));
 }
 
 function getStatus() {
-    fetch(`${API_URL}/bot/status?timestamp=${new Date().getTime()}`, { method: "GET" }) // Changed to GET request
+    fetch(`${API_URL}/bot/status?timestamp=${new Date().getTime()}`, { method: "GET", cache: "no-store"}) // Changed to GET request
         .then(response => response.text())
         .then(text =>{
             console.log("Raw API res: ", text);
