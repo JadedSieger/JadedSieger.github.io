@@ -1,6 +1,6 @@
 const API_URL = "https://lieserl-einstein-js-production.up.railway.app";
 
-function SendCommand(command) {
+function sendCommand(command) {
     fetch(`${API_URL}/bot/${command}`, {method: "POST"})
     .then(response => response.json())
     .then(data => alert(data.message))    
