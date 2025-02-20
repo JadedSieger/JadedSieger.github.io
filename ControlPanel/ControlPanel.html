@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel | VTuber Haven</title>
+    <link rel="stylesheet" href="contpanel.css"> <!-- Ensure this matches your main CSS -->
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar (Reuse existing navbar from index.html) -->
+    <header>
+        <nav class="navibar">
+            <div class="navidiv">
+                <ul class="nav-links">
+                  <li><a href="../index.html"><img class="navLogo" src="../Logos/logo-simple-removebg-preview.png"></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#Merchandise">Merchandise</a></li>
+                    <li><a href="./TalentCatalog/TalentCatalog.html">Talent Catalog</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="ControlPanel/ControlPanel.html">Control Panel</a></li>
+                </ul>
+            </div>
+          
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discord Bot Control Panel</h1>
+        <div class="panel-container">
+            <button onclick="sendCommand('start')">Start Bot</button>
+            <button onclick="sendCommand('stop')">Stop Bot</button>
+            <button onclick="getStatus()">Check Status</button>
+            <p id="status">Status: Unknown</p>
+        </div>
+    </main>
+
+    <script src="control-panel.js"></script>
