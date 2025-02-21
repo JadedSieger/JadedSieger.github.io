@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control Panel | VTuber Haven</title>
-    <link rel="stylesheet" href="contpanel.css"> <!-- Ensure this matches your main CSS -->
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="contpanel.css">
 </head>
 <body>
 
-    <!-- Navigation Bar (Reuse existing navbar from index.html) -->
     <header>
         <nav class="navibar">
             <div class="navidiv">
                 <ul class="nav-links">
-                  <li><a href="../index.html"><img class="navLogo" src="../Logos/logo-simple-removebg-preview.png"></a></li>
+                    <li><a href="../index.html"><img class="navLogo" src="../Logos/logo-simple-removebg-preview.png"></a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#Merchandise">Merchandise</a></li>
                     <li><a href="./TalentCatalog/TalentCatalog.html">Talent Catalog</a></li>
@@ -24,28 +20,34 @@
                     <li><a href="ControlPanel/ControlPanel.html">Control Panel</a></li>
                 </ul>
             </div>
-          
         </nav>
     </header>
 
     <main>
         <h1>Discord Bot Control Panel</h1>
+
+        <!-- Lieserl Einstein Bot Section -->
         <div class="panel-container">
-            <button onclick="SendCommand('start')">Start Bot</button>
-            <button onclick="SendCommand('stop')">Stop Bot</button>
-            <button onclick="getStatus()">Check Status</button>
-            <p id="botName">Name: Lieserl Einstein</p>
-            <p id="status">Status: </p>
-            <br>
-            <br>
-            
-            <button onclick="SendCommand('start')">Start Bot</button>
-            <button onclick="SendCommand('stop')">Stop Bot</button>
-            <button onclick="getStatus()">Check Status</button>
-            <p id="botName">Name: Lieserl Einstein</p>
-            <p id="status">Status: </p>
+            <h2>Lieserl Einstein</h2>
+            <button onclick="SendCommandLieserl('start')">Start Lieserl</button>
+            <button onclick="SendCommandLieserl('stop')">Stop Lieserl</button>
+            <button onclick="getStatusLieserl()">Check Lieserl Status</button>
+            <p id="lieserl-botName">Name: </p>
+            <p id="lieserl-status">Status: </p>
         </div>
+
+        <!-- SuiBot Section -->
+        <div class="panel-container">
+            <h2>SuiBot</h2>
+            <button onclick="SendCommandSuiBot('start')">Start SuiBot</button>
+            <button onclick="SendCommandSuiBot('stop')">Stop SuiBot</button>
+            <button onclick="getStatusSuiBot()">Check SuiBot Status</button>
+            <p id="suibot-botName">Name: </p>
+            <p id="suibot-status">Status: </p>
+        </div>
+
     </main>
 
     <script src="./control-panel.js"></script>
 </body>
+</html>
