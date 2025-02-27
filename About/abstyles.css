@@ -1,0 +1,132 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    position: relative; /* Make sure the navbar is above the video */
+    z-index: 10; /* Ensure it's above the video and overlay */
+}
+.navibar {
+  display: flex;
+  justify-content: space-between; /* Ensures logo is on the left and links are on the right */
+  align-items: center;
+  padding: 10px 30px;
+  height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navidiv {
+    width: 100%;
+    max-width: 1200px;
+    /* Restrict width for better layout */
+}
+.navLogo{
+  height: 70px;
+  width: auto;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  gap: 30px; /* Adds spacing between links */
+}
+.nav-links li{
+  display: flex;
+    align-items: center;
+}
+.nav-links li:first-child {
+  margin-right: auto; /* Pushes logo to the left */
+}
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4; /* Color change on hover */
+  }
+
+/* Highlighted Talents Section */
+.profile1 {
+    margin-top: 20px;
+}
+.profname, legend{
+    background-color: whitesmoke;
+}
+.profile1 h1{
+    background-color: white;
+}
+.profile1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.profLogo{
+    width: auto;
+    height: 200px;
+}
+fieldset{
+    overflow: hidden;
+    border-radius: 12px;
+    border: 10px;
+}
+.sideInfo{
+    max-width: 50%;
+    padding: 20px;
+}
+.desc2{
+    justify-content: left;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.desc2 h1{
+    font-size: 100px;
+}
+/* Footer */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the content */
+  }.contactInfo {
+    display: flex;
+    justify-content: center; /* Center the contact info horizontally */
+    margin-bottom: 20px; /* Space between contact info and bottom text */
+  }.footdiv {
+    width: 80%; /* Adjust width as needed */
+    max-width: 960px; /* Set a maximum width */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Collapse table borders */
+  }.footdiv td {
+    padding: 20px; /* Add padding to table cells */
+    vertical-align: top; /* Align content to the top of the cell */
+  }.extras,.extras2 {
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0; /* Remove default padding from lists */
+    text-align: left; /* Align text to the left within each list */
+  }.extras h3,.extras2 h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }.extras li,.extras2 li {
+    margin-bottom: 5px; /* Add spacing between list items */
+  }.bottom {
+    border-top: 1px solid #555; /* Add a line above the copyright text */
+    padding-top: 10px; /* Add padding above the copyright text */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
