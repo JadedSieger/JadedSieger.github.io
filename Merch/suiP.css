@@ -1,0 +1,227 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #333;
+    position: relative; /* Make sure the navbar is above the video */
+    z-index: 10; /* Ensure it's above the video and overlay */
+  }
+  .navibar {
+  display: flex;
+  justify-content: space-between; /* Ensures logo is on the left and links are on the right */
+  align-items: center;
+  padding: 10px 30px;
+  height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  .navidiv {
+    width: 100%;
+    max-width: 1200px;
+    /* Restrict width for better layout */
+  }
+  .navLogo{
+  height: 70px;
+  width: auto;
+  }
+  .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  gap: 30px; /* Adds spacing between links */
+  }
+  .nav-links li{
+  display: flex;
+    align-items: center;
+  }
+  .nav-links li:first-child {
+  margin-right: auto; /* Pushes logo to the left */
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4; /* Color change on hover */
+  }
+  
+  /* Highlighted Talents Section */
+  .profile1 {
+    margin-top: 20px;
+    padding-left: 50px;
+    font-size: 25px;
+  }
+  .profname, legend{
+    background-color: white;
+  }
+  .profile1 h1{
+    background-color: white;
+  }
+  .profile1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .profLogo{
+    width: 70px;
+    height: 70px;
+  }
+  .profPic{
+    height: 500px;
+    width: auto;
+  }
+  fieldset{
+    overflow: hidden;
+    border-radius: 12px;
+    border: 10px;
+  }
+  .sideInfo{
+    max-width: 50%;
+    padding: 20px;
+    
+  }
+  .desc2{
+    justify-content: left;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 40px;
+  }
+  .sideInf{
+    justify-content: left;
+    text-align: left;
+    padding-right: 70px;
+    padding-left: 250px;
+    font-size: 20px;
+  }
+  .gallery-container {
+    width:100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .gallery-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns gallery to the right */
+    gap: 10px; /* Adds space between images */
+  }
+  .gallery-container .album img { /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures consistent cropping */
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    border-radius: 8px; /* Optional: rounded corners *//* Optional: Adds slight rounding */
+  }
+  
+  .album img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .album img:hover {
+    transform: scale(1.05);
+  }
+  .socialtable {
+    display: flex;
+    justify-content: center; /* Centers logos */
+    align-items: center;
+    gap: 15px; /* Adds spacing between logos */
+    margin-top: 10px;
+  }
+  
+  .socialtable img {
+  width: 60px;  /* Ensures equal size */
+  height: 30px; /* Prevents distortion */
+    object-fit: contain; /* Ensures logos don’t get cropped */
+  }
+  
+  /* Talent Cards */
+  .talent-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .talent-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .talent-card img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .talent-card p {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor:pointer;
+    transition: background 0.3 ease;
+}
+button:hover{
+    background-color: #0056b3;
+}
+  /* Footer */
+  footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the content */
+  }.contactInfo {
+    display: flex;
+    justify-content: center; /* Center the contact info horizontally */
+    margin-bottom: 20px; /* Space between contact info and bottom text */
+  }.footdiv {
+    width: 80%; /* Adjust width as needed */
+    max-width: 960px; /* Set a maximum width */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Collapse table borders */
+  }.footdiv td {
+    padding: 20px; /* Add padding to table cells */
+    vertical-align: top; /* Align content to the top of the cell */
+  }.extras,.extras2 {
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0; /* Remove default padding from lists */
+    text-align: left; /* Align text to the left within each list */
+  }.extras h3,.extras2 h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }.extras li,.extras2 li {
+    margin-bottom: 5px; /* Add spacing between list items */
+  }.bottom {
+    border-top: 1px solid #555; /* Add a line above the copyright text */
+    padding-top: 10px; /* Add padding above the copyright text */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
+  
