@@ -26,12 +26,12 @@ function signUp() {
 function login(){
 
     let LoginUser = document.getElementById("unameL").value;
-    let loginEmail = document.getElementById("emL").value;
+    //let loginEmail = document.getElementById("emL").value;
     let loginPass = document.getElementById("passL").value;
 
     let storedUName = "admin123";
     //localStorage.getItem("uName");
-    let storedEmail = "admin123@gmail.com";
+    //let storedEmail = "admin123@gmail.com";
     //localStorage.getItem("email");
     let storedPass = "admin123";
     //localStorage.getItem("pass");
