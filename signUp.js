@@ -44,7 +44,9 @@ function login(){
         document.getElementById("loginBtn").disabled = false;
         },10000);
     } else{
-    window.open("./home.html", "_self"); 
+        console.log("Login successful!");
+        window.location.href = "./home.html";
+    //window.open("./home.html", "_self"); 
     }
 }
 
