@@ -46,7 +46,7 @@ function login(){
     } else{
 
     alert("Login successful!");
-    window.open("./home.html", "_blank"); 
+    window.open("./home.html", "_self"); 
     }
 }
 
