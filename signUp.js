@@ -36,7 +36,7 @@ function login(){
     let storedPass = "admin123";
     //localStorage.getItem("pass");
 
-    if ((LoginUser !== storedUName && LoginUser !== storedEmail) || loginPass !== storedPass) {
+    if ((LoginUser !== storedUName || LoginUser !== storedEmail) && loginPass !== storedPass) {
         alert("Wrong email/username or password.");
         document.getElementById("loginBtn").disabled = true;
         setTimeout(()=>{
