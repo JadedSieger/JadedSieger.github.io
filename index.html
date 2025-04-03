@@ -1,203 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>VTuber Haven: Talent Spotlight and Merch Outlet</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
     <head>
+        <title>VTuber Haven: Sign Up/Log In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./lgstyles.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
         <header>
             <nav class="navibar">
                 <div class="navidiv">
                     <ul class="nav-links">
-                      <li><a href="../index.html"><img class="navLogo" src="../Logos/logo-simple-removebg-preview.png"></a></li>
-                        <li><a href="./About/About.html">About</a></li>
-                        <li><a href="#Merchandise">Merchandise</a></li>
-                        <li><a href="./TalentCatalog/TalentCatalog.html">Talent Catalog</a></li>
-                        <li><a href="./Login/login.html">Login</a></li>
-                        <li><a href="ControlPanel/ControlPanel.html">Control Panel</a></li>
+                        <li><a href="../home.html"><img class="navLogo" src="../Logos/logo-simple-removebg-preview.png"></a></li>
+                        <li><a href="../About/About.html">About</a></li>
+                        <li><a href="../home.html#Merchandise">Merchandise</a></li>
+                        <li><a href="../TalentCatalog/TalentCatalog.html">Talent Catalog</a></li>
+                        <li><a href="./login.html">Login</a></li>
                     </ul>
                 </div>
               
             </nav>
         </header>
-    </head>
-    <body>
-        <div class="overlay">
-            <div class="vidBG">
-                <video autoplay muted loop id="myVideo">
-                    <source src="./virtual-youtubers-at-the-train-station-moewalls-com.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                </video>
-                <div class="overlay">
+        <section class="profile1">
+            <script type="text/javascript" src="./signUp.js"></script>
+            <div class="suisei">
+                <table>
+                    <tr>
+                        <td>
+                            <article class="profinfo">
+                                <fieldset class="mainProf">
+                                    <legend>
+                                        <h1><header class="profname">Log In/Sign Up</header></h1>
+                                    </legend>
+                                    <form id="loginF" >
+                                        <label for="uname">Username:</label>
+                                        <input type="text" id="uname"  name="Uname" required>
+                                        <br>
+                                        <label for="em">Email Address:</label>
+                                        <input type="text" id="em"  name="Email" required>
+                                        <br>
+                                        <label for="pass">Password:</label>
+                                        <input type="password" id="pass"  name="pass" required>
+                                        <label for="shipA">Shipping Address:</label>
+                                        <input type="text" id="shipA"  name="ShipA" required>
+                                        <label for="cont">Contact Number:</label>
+                                        <input type="text" id="cont"  name="Cont" required>
+                                        <button type="submit" onclick="signUp();">Submit</button>
+                                        <br>
+                                        
+                                    </form>
 
-                </div>
-                <div class="logo">
-                    <img class="homelogo" src="./Logos/logo-full-removebg-preview.png">
-                </div>
-            </div>
-
-        <section class="TalentsArea">
-            <div class="background">
-              <div class="BG2">
-                <img src="">
-              </div>
-              <div class="main">
-                <table class="tabTitle1">
-                  <tr>
-                    <th class="Title1">
-                      Our Highlighted Talents:
-                    </th>
+                                </fieldset>
+                            </article>
+                        </td>
+                    </tr>
                 </table>
-                <br>
-                <br>
-                <table class="pictureTable1">
-                  </tr>
-                  <tr>
-                    <td class="MC">
-                      <div class="zoom-container">
-                        <a href="./TalentProfiles/moriCalliope.html">
-                          <img class="MoriCalliope" src="./Talents/MoriCalliope.png">
-                          <br>
-                          <p>Mori Calliope - Hololive Talent</p>
-                        </a>
-                      </div>
-                    </td>
-                    <td class="HS">
-                      <div class="zoom-container">
-                        <a href="./TalentProfiles/hoshimachiSuisei.html">
-                          <img class="HoshimachiSuisei" src="./Talents/HoshimachiSuisei.png" alt="">
-                          <br>
-                          <p>Hoshimachi Suisei - Hololive Talent</p>
-                        </a>
-                      </div>
-                    </td>
-                    <td class="PP">
-                      <div class="zoom-container">
-                        <a href="./TalentProfiles/pipkinPippa.html">
-                          <img class="PipkinPippa" src="./Talents/PipkinPippa.png" alt="">
-                          <br>
-                          <p>Pipkin Pippa - Phase Connect Talent</p>
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="RP">
-                      <div class="zoom-container">
-                        <a href="./TalentProfiles/rinPenrose.html">
-                          <img class="rinPenrose" src="./Talents/rinPenrose-removebg-preview.png" alt="">
-                          <br>
-                          <p>Rin Penrose - Idol Corp. Talent</p>
-                        </a>
-                      </div>
-                    </td>
-                    <td class="UP">
-                      <div class="zoom-container">
-                        <a href="./TalentProfiles/usadaPekora.html">
-                          <img class="UsadaPekora" src="./Talents/UsadaPekora.png" alt="">
-                          <br>
-                          <p>Usada Pekora - Hololive Talent</p>
-                        </a>
-                      </div>
-                    </td>
-                    <td class="NR">
-                      <div class="zoom-container">
-                        <a href="./TalentProfiles/nerissaRavencroft.html">
-                          <img class="NerissaRavencroft" src="./Talents/bg_Nerissa-Ravencroft_01.png" alt="">
-                          <br>
-                          <p>Nerissa Ravencroft - Hololive Talent</p>
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
             </div>
-        </section>
-        <section class="merchArea" id="Merchandise">
-          <div class="merch">
-            <h1>Available from Official Stores:</h1>
-            <div class="merch-grid">  <div class="merch-item">
-              <!--https://shop.hololivepro.com/en/products/hololivefriends_hoshimachisuisei-->
-                <a href="./Merch/suiPlush.html">
-                  <img src="./Merch/hololivefriends_top_en_02_suisei_1671441623_700x.webp" alt="Hoshimachi Suisei Plushie">
-                  <p>Hoshimachi Suisei Plushie</p>
-                </a>
-              </div>
-              <div class="merch-item">
-                <!--https://shop.hololivepro.com/en/products/hololivefriends_moricalliope-->
-                <a href="./Merch/moriPlush.html">
-                  <img src="./Merch/ly_hololivefriends_vol_8_top_en_mori_calliope_1697682348_700x.webp" alt="Mori Calliope Plushie">
-                  <p>Mori Calliope Plushie</p>
-                </a>
-              </div>
-              <div class="merch-item">
-                <!--https://shop.phase-connect.com/collections/coffee/products/custom-roast-coffee-beans-pipkin-pippa-inspired-->
-                <a href="./Merch/pippaCoffee.html">
-                  <img src="./Merch/PippaCoffee_400x.webp" alt="Custom Roast Coffee Beans - Pipkin Pippa">
-                  <p>Custom Roast Coffee Beans - Pipkin Pippa</p>
-                </a>
-              </div>
-              <div class="merch-item">
-                <!--https://shop.hololivepro.com/en/products/hololiveen_advent_debut?variant=44013780795612-->
-                <a href="./Merch/advent.html">
-                  <img src="./Merch/en_advent_debutgoods_b2_1690458109_700x.webp" alt="hololive English -Advent- Debut Celebration">
-                  <p>hololive English -Advent- Debut Celebration</p>
-                </a>
-              </div>
-              <div class="merch-item">
-                <a href="https://shop.hololivepro.com/en/products/usadapekora_calendar2023?variant=43680129417436">
-                  <img src="./Merch/pekora_calendar_banner_topen_fix_1671167743_700x.webp" alt="Usada Pekora 2023 Desk Calendar">
-                  <p>Usada Pekora 2023 Desk Calendar</p>
-                </a>
-              </div>
-              <div class="merch-item">
-                <a href="https://shop.hololivepro.com/en/products/moricalliope_yourmori?variant=42196738506972">
-                  <img src="./Merch/1220_MoriCalliope_YourMori_98e78809-df38-4f67-8987-67cff5e65690_700x.webp" alt="Mori Calliope ”Your Mori.”">
-                  <p>Mori Calliope ”Your Mori.”</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        </section>        
         <footer>
-          <br>
-          <br>
-          <div class="contactInfo">
-            <table class="footdiv">
-              <tr>
+            <br>
+            <br>
+            <div class="contactInfo">
+                <table class="footdiv">
+                <tr>
                 <td>
-                  <ul class="extras">
-                    <p>
-                    <h3>Socials:</h3>
-                    </p>
+                <ul class="extras">
+                    <p><h3>Socials:</h3> </p>
                     <li>YouTube</li>
                     <li>Instagram</li>
                     <li>Facebook</li>
-                  </ul>
+                </ul>
                 </td>
                 <td>
-      
-                  <ul class="extras2">
-                    <p>
-                    <h3>Contacts:</h3>
-                    </p>
-                    <li>yoshiharuishihara2@gmail.com</li>
-                    <li>+63-961-126-7671 | +81 30-425-1159</li>
-                    <li>309-1229, Ikanikeisaiganaibaai, Shibuya-ku, Tokyo</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-            <br>
-            <br>
-            <br>
-          </div>
-          <div class="bottom">
-            <p>Virtual Haven @2023</p>
-          </div>
+                
+                <ul class="extras2">
+                <p><h3>Contacts:</h3> </p>
+                <li>yoshiharuishihara2@gmail.com</li>
+                <li>+63-961-126-7671 | +81 30-425-1159</li>
+                <li>309-1229, Ikanikeisaiganaibaai, Shibuya-ku, Tokyo</li>
+                </ul>
+            </td>
+                </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="bottom">
+                <p>Virtual Haven @2023</p>
+            </div>
         </footer>
+        
     </body>
 </html>
